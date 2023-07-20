@@ -8,24 +8,41 @@
   </head>
   <body>
     <header>
-      <nav class="flex items-center justify-between lg:px-32 lg:py-12">
+      <nav
+        class="flex items-center justify-between px-12 py-8 lg:px-32 lg:py-12"
+      >
         <!-- nav-left -->
-        <div class="w-60 cursor-pointer">
+        <div class="w-36 cursor-pointer lg:w-60">
           <img src="images/icons/logo.png" alt="logo" />
         </div>
         <!-- nav-right  -->
-        <div>
+        <div class="hidden md:block">
           <ul class="flex cursor-pointer font-semibold space-x-12">
-            <li><a href="">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Conatct us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Conatct us</a></li>
           </ul>
+        </div>
+
+        <!-- hambuerger menu -->
+        <div class="scale-125 md:hidden">
+          <ion-icon name="menu-outline"></ion-icon>
         </div>
       </nav>
       <section></section>
     </header>
     <main></main>
     <footer></footer>
+
+    <!-- icon scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
