@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-[#FFFBF0]">
@@ -36,19 +48,19 @@
         class="flex p-6 flex-col items-center justify-between md:flex-row lg:px-40 lg:py-8"
       >
         <!-- banner left -->
-        <div class="font-serif text-left">
+        <div class="font-serif space-y-3 text-left">
           <h1
-            class="text-[2.5rem] md:text-4xl md:leading-[4rem] lg:text-7xl uppercase lg:leading-[6rem] text-[#FABE4C]"
+            class="text-[2.5rem] font-bebas tracking-wide md:text-5xl md:leading-[4rem] lg:text-7xl uppercase lg:leading-[6rem] text-[#FABE4C]"
           >
             Be the Penguins <br />
             <span class="text-black">of Winter</span>
           </h1>
-          <p class="font-sans font-semibold pb-4">
+          <p class="font-sans font-semibold">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
           <button
-            class="bg-lime-600 px-4 py-2 text-white font-sans md:scale-100 md:px-8 md:py-4 rounded-lg flex items-center gap-2 cursor-pointer"
+            class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-4 py-2 text-white font-sans md:scale-100 md:px-8 md:py-4 rounded-lg flex items-center gap-2 cursor-pointer font-semibold"
           >
             <ion-icon class="text-2xl" name="cart-outline"></ion-icon> BUY NOW
           </button>
