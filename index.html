@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- imported fonts form google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,9 +14,21 @@
       rel="stylesheet"
     />
 
+    <!-- 2nd font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       .font-bebas {
         font-family: "Bebas Neue", sans-serif;
+      }
+
+      .font-roboto{
+        font-family: 'Roboto', sans-serif;
       }
     </style>
   </head>
@@ -75,11 +89,11 @@
     </header>
 
     <!-- main section starts -->
-    <main class="lg:px-[8.3rem] lg:py-[3rem]">
-      <h3 class="font-bebas text-5xl pb-6">WOMAN JACKET</h3>
+    <main class="max-w-7xl mx-auto py-12 ">
+      <h3 class="font-bebas text-center lg:text-left text-5xl md:pb-6">WOMAN JACKET</h3>
 
       <!-- card container -->
-      <div>
+      <div class=" scale-90 gap-6 flex flex-col items-center justify-center md:grid md:grid-cols-2  lg:flex lg:flex-row lg:items-center lg:scale-100 lg:justify-around lg:gap-8 ">
         <!-- card -->
         <div
           class="space-y-2 max-w-[23.125rem] max-h-[37.375rem] p-4 rounded-3xl shadow-md"
@@ -89,7 +103,61 @@
             src="images/jacket-1.png"
             alt=""
           />
-          <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
+          <h1 class="text-2xl font-roboto">Yellow Coat Jacket</h1>
+          <p class="">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+
+          <!-- price & buy button -->
+          <div class="flex items-center justify-between">
+            <p class="text-4xl font-black text-[#FABE4C]">$234</p>
+
+            <button
+              class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-4 py-2 text-white font-sans md:scale-100 md:px-8 md:py-4 rounded-lg flex items-center gap-2 cursor-pointer font-semibold"
+            >
+              <ion-icon class="text-2xl" name="cart-outline"></ion-icon> BUY NOW
+            </button>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div
+          class="space-y-2 max-w-[23.125rem] max-h-[37.375rem] p-4 rounded-3xl shadow-md"
+        >
+          <img
+            class="bg-[#F1F1F1] rounded-3xl p-4 text-center w-full"
+            src="images/jacket-2.png"
+            alt=""
+          />
+          <h1 class="text-2xl font-roboto"">Ladies Jacket</h1>
+          <p class="">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+
+          <!-- price & buy button -->
+          <div class="flex items-center justify-between">
+            <p class="text-4xl font-black text-[#FABE4C]">$234</p>
+
+            <button
+              class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-4 py-2 text-white font-sans md:scale-100 md:px-8 md:py-4 rounded-lg flex items-center gap-2 cursor-pointer font-semibold"
+            >
+              <ion-icon class="text-2xl" name="cart-outline"></ion-icon> BUY NOW
+            </button>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div
+          class="space-y-2 max-w-[23.125rem] max-h-[37.375rem] p-4 rounded-3xl shadow-md"
+        >
+          <img
+            class="bg-[#F1F1F1] rounded-3xl p-4 text-center w-full"
+            src="images/jacket-3.png"
+            alt=""
+          />
+          <h1 class="text-2xl font-roboto">Women Leather Jacket</h1>
           <p class="">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
